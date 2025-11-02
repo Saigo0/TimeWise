@@ -16,7 +16,7 @@ Route::resource('user', UserController::class);
 Route::resource('lazy-activities', LazyActivityController::class);
 Route::resource('nice-activities', NiceActivityController::class);
 
-Route::get('/compare', [ComparisonController::class, 'index'])->name('compare.index');
-Route::post('/compare', [ComparisonController::class, 'calculate'])->name('compare.calculate');
+Route::get('/compare/{lazyId}', [ComparisonController::class, 'index'])->name('compare.index');
+Route::post('/calculate', [ComparisonController::class, 'calculate'])->name('compare.calculate');
 
 

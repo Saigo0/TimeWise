@@ -14,7 +14,8 @@ class User extends Model
     protected $fillable = [
         'name',
         'login',
-        'password'
+        'password',
+        'hobbies'
     ];
 
     public function setPasswordAttribute($value)
