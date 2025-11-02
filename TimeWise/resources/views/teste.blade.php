@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/teste.css">
+    <link rel="stylesheet" href="{{ asset('css/teste.css') }}">
     <title>TimeWise-home</title>
 </head>
 <body>
@@ -35,5 +35,10 @@
             </div>
         </section>
     </main>
+    <script>
+    document.getElementById('btn_iniciar_formulario').addEventListener('click', function() {
+        window.location.href = "{{ route('compare.create') }}";
+    });
+</script>
 </body>
 </html>

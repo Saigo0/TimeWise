@@ -21,7 +21,7 @@
         </div>
     </header>
     <main>
-        <form id="form_questionario_pessoa" class="container_form" action="">
+        <form id="form_questionario_pessoa" class="container_form" action="{{ route('users.store') }}">
 
             <div class="primeira_secao_form">
                 <h2>Informações Pessoais</h2>
@@ -35,19 +35,19 @@
                 <h2>Seus hobbies de estudo</h2>
                 <p>Marque as atividades que você lida com frequência e sente prazer em realizá-las:</p>
                 <label>
-                    <input type="checkbox" name="hobbies_estudo" value="Leitura">
+                    <input type="checkbox" name="hobbies_estudo[]" value="Leitura">
                     Leitura
                 </label>
                 <label>
-                    <input type="checkbox" name="hobbies_estudo" value="Escrita">
+                    <input type="checkbox" name="hobbies_estudo[]" value="Escrita">
                     Escrita
                 </label>
                 <label>
-                    <input type="checkbox" name="hobbies_estudo" value="Programação">
+                    <input type="checkbox" name="hobbies_estudo[]" value="Programação">
                     Programação
                 </label>
                 <label>
-                    <input type="checkbox" name="hobbies_estudo" value="Música">
+                    <input type="checkbox" name="hobbies_estudo[]" value="Musica">
                     Música
                 </label>
                 
@@ -61,19 +61,19 @@
                 <h2>Seus hobbies de relaxamento</h2>
                 <p>Marque as atividades que você lida com frequência e sente prazer em realizá-las:</p>
                 <label>
-                    <input type="checkbox" name="hobbies_relaxamento" value="Oração">
+                    <input type="checkbox" name="hobbies_relaxamento[]" value="Oração">
                     Oração
                 </label>
                 <label>
-                    <input type="checkbox" name="hobbies_relaxamento" value="Socializar com conhecidos">
+                    <input type="checkbox" name="hobbies_relaxamento[]" value="Socializar com conhecidos">
                     Socializar com conhecidos
                 </label>
                 <label>
-                    <input type="checkbox" name="hobbies_relaxamento" value="Fazer trilha">
+                    <input type="checkbox" name="hobbies_relaxamento[]" value="Fazer trilha">
                     Fazer trilha
                 </label>
                 <label>
-                    <input type="checkbox" name="hobbies_relaxamento" value="Passear com pets">
+                    <input type="checkbox" name="hobbies_relaxamento[]" value="Passear com pets">
                     Passear com pets
                 </label>
                 
