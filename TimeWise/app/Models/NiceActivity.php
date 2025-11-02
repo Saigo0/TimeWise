@@ -5,21 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class NiceActivity extends Model
 {
     use HasFactory;
 
-    protected $table = 'users';
+    protected $table = 'nice_activities';
 
     protected $fillable = [
         'name',
-        'login',
-        'password'
+        'baseQuant',
+        'baseUnit'
     ];
-
-    public function setPasswordAttribute($value)
-{
-    $this->attributes['password'] = bcrypt($value);
-}
-
 }
